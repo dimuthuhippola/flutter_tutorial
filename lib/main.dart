@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial_day_1/pages/first_screen.dart';
 import 'pages/login_page.dart';
 
 void main() {
@@ -14,12 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(title: 'Flutter Demo Home Page'),
+      home: const FirstPage(),
     );
   }
 }
-
-

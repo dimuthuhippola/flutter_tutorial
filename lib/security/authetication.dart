@@ -1,7 +1,8 @@
 import 'dart:convert';
+import 'package:flutter_tutorial_day_1/constants.dart';
 import 'package:http/http.dart' as http;
 
-const serverName = 'localhost:3002';
+
 
 class Authenticator {
 
@@ -12,7 +13,7 @@ class Authenticator {
 
   //normally included inside a try catch block
 
-    http.Response response = await http.post(Uri.http(serverName, '/auth'),
+    http.Response response = await http.post(Uri.http(SERVER_NAME, '/auth'),
         headers: header, body: jsonEncode(body));
 
     return response.statusCode==200? true : false;
